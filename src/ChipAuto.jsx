@@ -57,7 +57,8 @@ const ChipAuto = () => {
   return (
     <div className="w-1/2 mx-auto mt-10">
       <div className="border rounded p-4">
-        <div className="flex flex-wrap mb-2">
+        <p className='mb-3'>Input Tags</p>
+        <div className="flex flex-wrap mb-1">
           {chips.map(chip => (
             <div key={chip} className="flex items-center bg-grey-700 text-black  font-bold px-3 py-1 rounded-full mr-2 mb-2">
               {chip}
@@ -65,6 +66,7 @@ const ChipAuto = () => {
             </div>
           ))}
         </div>
+   
         <input
           type="text"
           className="w-full border p-2 rounded"
