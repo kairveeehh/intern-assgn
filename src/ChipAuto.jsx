@@ -60,7 +60,7 @@ const ChipAuto = () => {
         <p className='mb-3'>Input Tags</p>
         <div className="flex flex-wrap mb-1">
           {chips.map(chip => (
-            <div key={chip} className="flex items-center bg-grey-700 text-black  font-bold px-3 py-1 rounded-full mr-2 mb-2">
+            <div key={chip} className="flex items-center bg-grey-700 text-black  font-semibold px-3 py-1 rounded-full mr-2 mb-2">
               {chip}
               <button onClick={() => handleDeleteChip(chip)} className="ml-4 font-bold">x</button>
             </div>
