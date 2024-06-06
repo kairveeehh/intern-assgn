@@ -6,7 +6,7 @@ const ParentComponent = () => {
 
   return (
     <div>
-      
+       
       <ChipAuto suggestions={dynamincarr} />
     </div>
   );
