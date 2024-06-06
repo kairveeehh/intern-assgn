@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const suggestions = [
-  'React', 'Hands On', 'Live Coding', 'Angular', 'Vue JS', 'JS Fundamentals', 'Typescript', 
-  'Browser/DOM', 'API', 'Router', 'Forms', 'Jest', 'Vue', 'Templates', 'Directives', 
-  'Routing', 'State management', 'Asynchronous programming', 'React Js', 'Hooks', 
-  'JSX', 'CSS', 'flex', 'DOM'
-];
+// const suggestions = [
+//   'React', 'Hands On', 'Live Coding', 'Angular', 'Vue JS', 'JS Fundamentals', 'Typescript', 
+//   'Browser/DOM', 'API', 'Router', 'Forms', 'Jest', 'Vue', 'Templates', 'Directives', 
+//   'Routing', 'State management', 'Asynchronous programming', 'React Js', 'Hooks', 
+//   'JSX', 'CSS', 'flex', 'DOM'
+// ];
 
-const ChipAuto = () => {
+const ChipAuto = ({suggestions}) => {
   const [inputValue, setInputValue] = useState('');
   const [chips, setChips] = useState([]);
   const [filteredSuggestions, setFilteredSuggestions] = useState(suggestions);
